@@ -58,7 +58,7 @@ html {
   width: 250px;
   position: absolute;
   right: 3rem;
-  bottom: 6rem;
+  top: 32rem;
 }
 
 .laptop-home {
@@ -79,7 +79,7 @@ header h1 {
   font-size: 22px;
   font-weight: 900;
   padding: 20px;
-  width: 40%;
+  width: 70%;
 }
 
 header a {
@@ -238,7 +238,7 @@ main {
   color: black;
   width: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   width: 100%;
   letter-spacing: 3px;
@@ -254,7 +254,7 @@ main {
 #tAbout:before {
   content: "";
   position: relative;
-  bottom: -52px;
+  bottom: -48px;
   left: 50%;
   width: 150px;
   font-size: 20px;
@@ -270,7 +270,7 @@ main {
   content: "Who I am";
   position: absolute;
   top: 33px;
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px;
   letter-spacing: 1px;
   background-color: #fff;
@@ -316,7 +316,7 @@ main {
   content: "";
   position: absolute;
   width: 100%;
-  height: 27%;
+  height: 24%;
   background: #802cd4;
   border-radius: 20px 20px 0 0;
 }
@@ -324,12 +324,13 @@ main {
 .card .card-content {
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 10px;
   position: relative;
 }
 
 .card-content {
   align-items: center;
+  font-size: 14px;
 }
 
 .card .media-icons {
@@ -358,15 +359,16 @@ main {
   color: #f3f3f3;
   font-size: 23px;
   text-align: center;
+  width: 100%;
 }
 
 .name {
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 800;
 }
 
 .proffession {
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -381,25 +383,33 @@ main {
   margin-left: 10px;
 }
 .about p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .information {
   margin-top: 20px;
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 .info-about {
-  margin-right: 15%;
+  margin-right: 5%;
 }
 
 .info {
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 14px;
+}
+.info-cont {
+  font-size: 11px;
 }
 
 .ocp {
-  font-weight: 900;
+  font-weight: 800;
+}
+
+.ocp-cont {
+  font-size: 14px;
 }
 
 .Occupation {
@@ -431,8 +441,8 @@ main {
 #offers-head:before {
   content: "";
   position: relative;
-  bottom: -53px;
-  left: 50%;
+  bottom: -49px;
+  left: 51%;
   width: 200px;
   font-size: 20px;
   color: #6b03bd;
@@ -447,7 +457,8 @@ main {
   content: "What i offers";
   position: absolute;
   top: 33px;
-  font-size: 20px;
+  font-size: 16px;
+  width: 130px;
   padding: 5px;
   letter-spacing: 1px;
   background-color: #fff;
@@ -458,7 +469,7 @@ main {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
   margin: 0 auto;
   margin-top: -40px;
@@ -466,8 +477,8 @@ main {
 
 .card-offers {
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   margin: 5px auto;
   background: #222529;
   color: #fff;
@@ -494,13 +505,13 @@ main {
 
 .face.face1-offers {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   color: white;
 }
 
 .face.face1-offers h2 {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .face.face2-offers {
@@ -578,26 +589,6 @@ main {
   position: relative;
 }
 
-#technologies-head {
-  width: 28%;
-  margin-left: 7%;
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 25px;
-  border-image: linear-gradient(
-      90deg,
-      rgba(148, 1, 212, 255) 20%,
-      rgba(93, 8, 112, 0.5) 54%,
-      rgba(202, 2, 159, 0) 100%
-    )
-    1;
-  border-width: 6px;
-  border-style: solid;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-
 .technologies {
   width: 90%;
   display: flex;
@@ -608,6 +599,7 @@ main {
   border-radius: 20px;
   justify-content: space-around;
   box-shadow: 0px 0px 15px black;
+  display: none;
 }
 
 .icons-tech {
@@ -769,7 +761,7 @@ main {
   color: black;
   width: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   width: 100%;
   letter-spacing: 3px;
@@ -778,14 +770,14 @@ main {
 #Portfolio-head:before {
   content: "";
   position: relative;
-  bottom: -53px;
+  bottom: -49px;
   left: 50%;
   width: 160px;
   font-size: 20px;
   color: #6b03bd;
   height: 3px;
   background-color: #111;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
   z-index: -1;
   display: block;
 }
@@ -794,7 +786,8 @@ main {
   content: "What I did";
   position: absolute;
   top: 33px;
-  font-size: 20px;
+  font-size: 16px;
+  width: 99px;
   padding: 5px;
   letter-spacing: 1px;
   background-color: #fff;
@@ -956,7 +949,7 @@ main {
 #contact-head:before {
   content: "";
   position: relative;
-  bottom: -53px;
+  bottom: -49px;
   left: 50%;
   width: 190px;
   font-size: 20px;
@@ -972,12 +965,13 @@ main {
   content: "Get in touch";
   position: absolute;
   top: 33px;
-  font-size: 20px;
+  font-size: 16px;
+  width: 120px;
   padding: 5px;
   letter-spacing: 1px;
   background-color: #fff;
   color: #6b03bd;
-  transform: translateX(-104%);
+  transform: translateX(-109%);
   z-index: -1;
 }
 
@@ -993,20 +987,22 @@ main {
 }
 
 .contact-information {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .contact_form {
   row-gap: 3rem;
+  display: block;
 }
 
 .contact_content {
   background-color: var(--secound-color);
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem 0.5rem;
-  display: grid;
+  display: block;
+  margin-top: 2rem;
   justify-content: space-between;
 }
 
@@ -1035,9 +1031,9 @@ main {
 }
 
 .contact_message {
-  max-width: 525px;
-  min-width: 525px;
-  width: 525px;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
   background-color: transparent;
   outline: none;
   border: none;
@@ -1047,6 +1043,7 @@ main {
 
 .button-contact {
   display: flex;
+  margin-top: 1rem;
   justify-content: space-between;
   width: 100%;
 }
@@ -1085,6 +1082,7 @@ main {
   font-size: 23px;
   width: 100%;
   visibility: visible;
+  margin-top: 1rem;
 }
 
 .my-email i {
@@ -1120,7 +1118,6 @@ main {
 
 footer {
   margin-top: 3rem;
-
   position: absolute;
   width: 100%;
 }
@@ -1128,14 +1125,15 @@ footer {
 footer #footer-svg {
   position: relative;
   bottom: -10px;
+  width: 100%;
 }
 
 #copyright {
   position: absolute;
-  bottom: 10px;
+  bottom: 3px;
   width: 100%;
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
   margin-top: 400px;
   color: rgb(255, 255, 255);
   z-index: 1;
@@ -1325,6 +1323,7 @@ footer #footer-svg {
     margin-top: 15vh;
     position: relative;
     margin-bottom: 7rem;
+    width: 100%;
   }
 
   #offers-head {
@@ -1357,6 +1356,7 @@ footer #footer-svg {
     position: absolute;
     top: 33px;
     font-size: 20px;
+    width: auto;
     padding: 5px;
     letter-spacing: 1px;
     background-color: #fff;
@@ -1366,18 +1366,28 @@ footer #footer-svg {
   }
 
   .card-container {
-    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    margin: 0 auto;
+    margin-top: -40px;
   }
 
   .card-offers {
     position: relative;
     width: 400px;
-    height: 250px;
-    margin: 25px auto;
+    height: 300px;
+    margin: 5px auto;
     background: #222529;
     color: #fff;
     transition: 0.5s;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 25px;
+  }
+
+  .cantainer-offers .card-offers:hover {
+    box-shadow: 0 30px 50px rgb(0, 0, 20, 0.2);
   }
 
   .face {
@@ -1398,11 +1408,312 @@ footer #footer-svg {
     color: white;
   }
 
+  .face.face1-offers h2 {
+    margin-top: 60px;
+  }
+
   .face.face2-offers {
     background: #701cc488;
     backdrop-filter: blur(1rem);
     transition: 0.5s;
     border-radius: 25px;
+  }
+
+  .card-offers:hover .face.face2-offers {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: 2px solid white;
+  }
+
+  .card-offers:hover .face.face2-offers i {
+    font-size: 23px;
+  }
+
+  .card-offers .face.face2-offers i {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+  }
+
+  /* about me======================= */
+  #tAbout {
+    position: relative;
+    color: black;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100%;
+    letter-spacing: 3px;
+  }
+
+  #about span {
+    font-size: 27px;
+    text-shadow: 0px 2px 10px rgb(255, 255, 255);
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  #tAbout:before {
+    content: "";
+    position: relative;
+    bottom: -52px;
+    left: 50%;
+    width: 150px;
+    font-size: 20px;
+    color: #6b03bd;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+    z-index: -1;
+    display: block;
+  }
+
+  #tAbout:after {
+    content: "Who I am";
+    position: absolute;
+    top: 33px;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #6b03bd;
+    transform: translateX(-130%);
+    z-index: -1;
+  }
+
+  /* --------Photo------*/
+  .photoAbout {
+    margin-top: 4rem;
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #802cd4;
+  }
+
+  .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #202424;
+  }
+
+  .card {
+    background: #202424;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 15px black;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 27%;
+    background: #802cd4;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    position: relative;
+  }
+
+  .card-content {
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .card .media-icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card .media-icons i {
+    margin-top: 10px;
+    color: white;
+    opacity: 0.5;
+    transition: all 0.3s easy;
+    cursor: pointer;
+  }
+
+  .card .media-icons i:hover {
+    opacity: 1;
+    transform: scale(1.15);
+    transition: all 0.3s easy;
+  }
+
+  .name-proffession {
+    color: #f3f3f3;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .proffession {
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  .about span {
+    font-weight: 900;
+    font-size: 19px;
+  }
+
+  .about {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .about p {
+    font-size: 15px;
+  }
+
+  .information {
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+  }
+
+  .info-about {
+    margin-right: 20%;
+  }
+
+  .info {
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .info-cont {
+    font-size: 19px;
+  }
+
+  .ocp {
+    font-weight: 900;
+  }
+
+  .ocp-cont {
+    font-size: 19px;
+  }
+
+  .Occupation {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 2px solid #262729;
+  }
+
+  .technologies {
+    width: 90%;
+    display: flex;
+  }
+
+  #Portfolio-head {
+    color: black;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100%;
+    letter-spacing: 3px;
+  }
+
+  #Portfolio-head:before {
+    content: "";
+    position: relative;
+    bottom: -52px;
+    left: 50%;
+    width: 160px;
+    font-size: 20px;
+    color: #6b03bd;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-47%);
+    z-index: -1;
+    display: block;
+  }
+
+  #Portfolio-head:after {
+    content: "What I did";
+    position: absolute;
+    top: 33px;
+    font-size: 19px;
+    width: auto;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #6b03bd;
+    transform: translateX(-116%);
+    z-index: -1;
+  }
+
+  /* contact================================== */
+  #contact-head {
+    color: black;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100%;
+    letter-spacing: 3px;
+    margin-bottom: 4rem;
+  }
+
+  #contact-head:before {
+    content: "";
+    position: relative;
+    bottom: -53px;
+    left: 50%;
+    width: 190px;
+    font-size: 20px;
+    color: #6b03bd;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+    z-index: -1;
+    display: block;
+  }
+
+  #contact-head:after {
+    content: "Get in touch";
+    position: absolute;
+    top: 33px;
+    font-size: 20px;
+    padding: 5px;
+    width: auto;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #6b03bd;
+    transform: translateX(-104%);
+    z-index: -1;
+  }
+  .contact_form {
+    row-gap: 3rem;
+    display: grid;
   }
 }
 
@@ -1633,6 +1944,7 @@ footer #footer-svg {
 
   .technologies {
     width: 100%;
+    display: flex;
   }
 
   .icons-tech {
@@ -1752,6 +2064,7 @@ footer #footer-svg {
   }
 
   .button-contact {
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
