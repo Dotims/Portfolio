@@ -64,6 +64,9 @@ html {
 .laptop-home {
   display: none;
 }
+.tablet-home {
+  display: none;
+}
 
 header {
   width: 100%;
@@ -1143,6 +1146,87 @@ footer #footer-svg {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .phone-home {
+    display: none;
+  }
+  .tablet-home {
+    width: 300px;
+    position: absolute;
+    right: 3rem;
+    display: block;
+  }
+
+  #tAbout {
+    position: relative;
+    color: black;
+    width: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100%;
+    letter-spacing: 3px;
+  }
+
+  #about span {
+    font-size: 27px;
+    text-shadow: 0px 2px 10px rgb(255, 255, 255);
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  #tAbout:before {
+    content: "";
+    position: relative;
+    bottom: -52px;
+    left: 50%;
+    width: 170px;
+    font-size: 20px;
+    color: #6b03bd;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-55%);
+    z-index: -1;
+    display: block;
+  }
+
+  #tAbout:after {
+    content: "Who I am";
+    position: absolute;
+    top: 33px;
+    font-size: 22px;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #6b03bd;
+    transform: translateX(-130%);
+    z-index: -1;
+  }
+
+  .about p {
+    font-size: 17px;
+  }
+
+  .info {
+    font-weight: 900;
+    font-size: 21px;
+  }
+
+  .info-cont {
+    font-size: 19px;
+  }
+
+  .information {
+    margin-left: 10%;
+  }
+  .ocp {
+    font-size: 21px;
+  }
+  .ocp-cont {
+    font-size: 19px;
+  }
+}
+
 @media (min-width: 1024px) {
   .laptop-home {
     width: 700px;
@@ -1151,7 +1235,8 @@ footer #footer-svg {
     right: 3rem;
     top: 13rem;
   }
-  .phone-home {
+
+  .tablet-home {
     display: none;
   }
 
@@ -1715,6 +1800,13 @@ footer #footer-svg {
     row-gap: 3rem;
     display: grid;
   }
+
+  .about p {
+    font-size: 21px;
+  }
+  .about {
+    font-size: 24px;
+  }
 }
 
 /* ==========Media query SECTION========== */
@@ -1737,6 +1829,9 @@ footer #footer-svg {
   }
 
   .laptop-home {
+    display: none;
+  }
+  .tablet-home {
     display: none;
   }
 
@@ -1883,7 +1978,6 @@ footer #footer-svg {
   .info-about {
     margin-right: 25%;
   }
-
   /* <================OFFERS================> */
 
   .cantainer-offers {
@@ -2040,7 +2134,6 @@ footer #footer-svg {
     position: absolute;
     width: 50%;
     top: 6.9rem;
-    right: 0;
   }
 
   .contact_input {
