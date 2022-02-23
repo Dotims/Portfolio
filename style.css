@@ -57,7 +57,7 @@ html {
   display: block;
   width: 250px;
   position: absolute;
-  right: 3rem;
+  right: 2rem;
   top: 32rem;
 }
 
@@ -472,7 +472,7 @@ main {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 10px;
   margin: 0 auto;
   margin-top: -40px;
@@ -480,7 +480,7 @@ main {
 
 .card-offers {
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 250px;
   margin: 5px auto;
   background: #222529;
@@ -1146,6 +1146,15 @@ footer #footer-svg {
   display: none;
 }
 
+.rwd {
+  display: flex;
+  width: 100%;
+  /* margin-top: ; */
+}
+.rwd i {
+  font-size: 2rem;
+}
+
 @media (min-width: 768px) {
   .phone-home {
     display: none;
@@ -1224,6 +1233,27 @@ footer #footer-svg {
   }
   .ocp-cont {
     font-size: 19px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-gap: 10px;
+    margin: 0 auto;
+    margin-top: -40px;
+  }
+
+  .card-offers {
+    position: relative;
+    width: 370px;
+    height: 250px;
+    margin: 5px auto;
+    background: #222529;
+    color: #fff;
+    transition: 0.5s;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
   }
 }
 
@@ -1452,7 +1482,7 @@ footer #footer-svg {
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 10px;
     margin: 0 auto;
     margin-top: -40px;
@@ -1460,7 +1490,7 @@ footer #footer-svg {
 
   .card-offers {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 300px;
     margin: 5px auto;
     background: #222529;
@@ -1807,6 +1837,18 @@ footer #footer-svg {
   .about {
     font-size: 24px;
   }
+
+  .contact-media {
+    display: flex;
+  }
+  .rwd {
+    display: flex;
+    width: 100%;
+    /* margin-top: ; */
+  }
+  .rwd i {
+    font-size: 2.5rem;
+  }
 }
 
 /* ==========Media query SECTION========== */
@@ -2130,7 +2172,6 @@ footer #footer-svg {
 
   .contact-img {
     display: block;
-    margin-top: 2rem;
     position: absolute;
     width: 50%;
     top: 6.9rem;
@@ -2212,10 +2253,11 @@ footer #footer-svg {
   }
 
   .contact-media {
-    width: 15%;
+    width: 78%;
+    cursor: pointer;
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2rem;
   }
 
@@ -2230,11 +2272,14 @@ footer #footer-svg {
     transform: scale(1.15) translateY(-7px);
     transition: 0.4s ease;
   }
+  .rwd {
+    display: none;
+  }
 
   /* ==========footer SECTION========== */
 
   footer {
-    margin-top: 5rem;
+    margin-top: 8rem;
     position: absolute;
     width: 100%;
   }
