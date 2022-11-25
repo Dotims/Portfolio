@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page-portfolio {
+  cursor: pointer;
+}
+
+img {
+  width: 180px;
+  margin-top: 5px;
+}
+
+header {
+  width: 100%;
+  position: static;
+  box-shadow: 0px 6px 5px -7px rgb(110, 110, 110);
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-option{
+  margin-left: 3rem;
+}
+
+.nav-option li {
+  display: inline;
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-option li:hover {
+  border-bottom: 2px solid black;
+}
+
+.nav-option li a {
+  text-decoration: none;
+  color: black;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-left: -8px;
+}
+
+.Search {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.find-icon {
+  padding: 5px;
+}
+
+.user {
+  display: flex;
+  margin-right: 30px;
+}
+
+.favority,
+.acount,
+.Shopping-card {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+main{
+  margin: auto;
+  width: 80%; 
+}
+
+.slider-container{
+  width: 79.5%;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-img{
+  object-fit: cover;
+  width: 85rem;
+  height: 765px;
+}
+
+.slides{
+  text-align: center;
+
+}
+
+.slides img{
+  width: 78rem;
+}
+
+.img-repair{
+  height: 47.8rem;
+}
+
+.change-slider{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  font-size: 55px;
+  top: 38%;
+  width: 63.71%;
+}
+
+.next, .prev{
+  position: relative;
+  padding: 10px;
+}
+
+.next:hover, .prev:hover{
+  background-color: rgba(7, 6, 6, 0.247);
+  cursor: pointer;
+}
+
+
+.photo-slides{
+  display: flex;
+  animation: slides 30s infinite;
+}
+
+
+
+
+
+
+
+@keyframes slides{
+  0%{
+    transform: translateX(0%);
+  }
+  9%{
+    transform: translateX(0%);
+  }
+  10%{
+    transform: translateX(-20%);
+  }
+  19%{
+    transform: translateX(-20%);
+  }
+  20%{
+    transform: translateX(-40%);
+  }
+  29%{
+    transform: translateX(-40%);
+  }
+  30%{
+    transform: translateX(-60%);
+  }
+  39%{
+    transform: translateX(-60%);
+  }
+  40%{
+    transform: translateX(-80%);
+  }
+  49%{
+    transform: translateX(-80%);
+  }
+  50%{
+    transform: translateX(-60%);
+  }
+  59%{
+    transform: translateX(-60%);
+  }
+  60%{
+    transform: translateX(-40%);
+  }
+  69%{
+    transform: translateX(-40%);
+  }
+  70%{
+    transform: translateX(-20%);
+  }
+  79%{
+    transform: translateX(-20%);
+  }
+  80%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

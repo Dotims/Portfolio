@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
   color: black;
@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -255,7 +255,7 @@ main {
 }
 
 #tAbout:before {
-  content: "";
+  content: '';
   position: relative;
   bottom: -48px;
   left: 50%;
@@ -270,7 +270,7 @@ main {
 }
 
 #tAbout:after {
-  content: "Who I am";
+  content: 'Who I am';
   position: absolute;
   top: 33px;
   font-size: 15px;
@@ -316,7 +316,7 @@ main {
 }
 
 .card::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 24%;
@@ -442,7 +442,7 @@ main {
 }
 
 #offers-head:before {
-  content: "";
+  content: '';
   position: relative;
   bottom: -49px;
   left: 51%;
@@ -457,7 +457,7 @@ main {
 }
 
 #offers-head:after {
-  content: "What i offers";
+  content: 'What i offers';
   position: absolute;
   top: 33px;
   font-size: 16px;
@@ -559,7 +559,7 @@ main {
 }
 
 #Skills-head:before {
-  content: "";
+  content: '';
   position: relative;
   bottom: -53px;
   left: 50%;
@@ -574,7 +574,7 @@ main {
 }
 
 #Skills-head:after {
-  content: "my skills";
+  content: 'my skills';
   position: absolute;
   top: 33px;
   font-size: 20px;
@@ -680,35 +680,35 @@ main {
 }
 
 .percent-html {
-  width: 90%;
+  width: 100%;
 }
 
 .percent-css {
-  width: 85%;
+  width: 100%;
 }
 
 .percent-js {
-  width: 60%;
+  width: 90%;
 }
 
 .percent-react {
-  width: 5%;
+  width: 60%;
 }
 
 .percent-php {
-  width: 50%;
+  width: 35%;
 }
 
 .percent-node {
-  width: 55%;
+  width: 10%;
 }
 
 .percent-figma {
-  width: 95%;
+  width: 100%;
 }
 
 .percent-photoshop {
-  width: 75%;
+  width: 100%;
 }
 
 .percent-wordpress {
@@ -771,7 +771,7 @@ main {
 }
 
 #Portfolio-head:before {
-  content: "";
+  content: '';
   position: relative;
   bottom: -49px;
   left: 50%;
@@ -786,7 +786,7 @@ main {
 }
 
 #Portfolio-head:after {
-  content: "What I did";
+  content: 'What I did';
   position: absolute;
   top: 33px;
   font-size: 16px;
@@ -901,8 +901,6 @@ main {
   padding: 40px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  transform: translateY(50px);
-  transition: 0.5s easy;
 }
 
 .portfolio-model.active .portfolio-model-body {
@@ -927,6 +925,25 @@ main {
   overflow: hidden;
 }
 
+.page-portfolio {
+  width: 30%;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #7400c7;
+  color: white;
+  font-weight: 800;
+  border-radius: 10px 20px;
+  font-size: 15px;
+  border: none;
+  box-shadow: 0px 2px 10px 5px rgb(160, 160, 160);
+}
+
+.page-portfolio:hover {
+  background-color: #4b0280;
+  box-shadow: 0px 0px 0px 0px rgb(160, 160, 160);
+  transition: 0.5s;
+}
 /* ==========Contact SECTION========== */
 
 .contact-container {
@@ -950,7 +967,7 @@ main {
 }
 
 #contact-head:before {
-  content: "";
+  content: '';
   position: relative;
   bottom: -49px;
   left: 50%;
@@ -965,7 +982,7 @@ main {
 }
 
 #contact-head:after {
-  content: "Get in touch";
+  content: 'Get in touch';
   position: absolute;
   top: 33px;
   font-size: 16px;
@@ -1185,7 +1202,7 @@ footer #footer-svg {
   }
 
   #tAbout:before {
-    content: "";
+    content: '';
     position: relative;
     bottom: -52px;
     left: 50%;
@@ -1200,7 +1217,7 @@ footer #footer-svg {
   }
 
   #tAbout:after {
-    content: "Who I am";
+    content: 'Who I am';
     position: absolute;
     top: 33px;
     font-size: 22px;
@@ -1318,7 +1335,7 @@ footer #footer-svg {
   }
 
   nav li > a::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -5px;
     right: 0;
@@ -1452,10 +1469,10 @@ footer #footer-svg {
   }
 
   #offers-head:before {
-    content: "";
+    content: '';
     position: relative;
     bottom: -53px;
-    left: 50%;
+    left: 51%;
     width: 200px;
     font-size: 20px;
     color: #6b03bd;
@@ -1467,7 +1484,7 @@ footer #footer-svg {
   }
 
   #offers-head:after {
-    content: "What i offers";
+    content: 'What i offers';
     position: absolute;
     top: 33px;
     font-size: 20px;
@@ -1576,7 +1593,7 @@ footer #footer-svg {
   }
 
   #tAbout:before {
-    content: "";
+    content: '';
     position: relative;
     bottom: -52px;
     left: 50%;
@@ -1591,7 +1608,7 @@ footer #footer-svg {
   }
 
   #tAbout:after {
-    content: "Who I am";
+    content: 'Who I am';
     position: absolute;
     top: 33px;
     font-size: 20px;
@@ -1637,7 +1654,7 @@ footer #footer-svg {
   }
 
   .card::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 27%;
@@ -1758,7 +1775,7 @@ footer #footer-svg {
   }
 
   #Portfolio-head:before {
-    content: "";
+    content: '';
     position: relative;
     bottom: -52px;
     left: 50%;
@@ -1773,7 +1790,7 @@ footer #footer-svg {
   }
 
   #Portfolio-head:after {
-    content: "What I did";
+    content: 'What I did';
     position: absolute;
     top: 33px;
     font-size: 19px;
@@ -1799,7 +1816,7 @@ footer #footer-svg {
   }
 
   #contact-head:before {
-    content: "";
+    content: '';
     position: relative;
     bottom: -53px;
     left: 50%;
@@ -1814,7 +1831,7 @@ footer #footer-svg {
   }
 
   #contact-head:after {
-    content: "Get in touch";
+    content: 'Get in touch';
     position: absolute;
     top: 33px;
     font-size: 20px;
@@ -1924,7 +1941,7 @@ footer #footer-svg {
   }
 
   nav li > a::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -5px;
     right: 0;
@@ -2018,7 +2035,7 @@ footer #footer-svg {
   }
 
   .info-about {
-    margin-right: 25%;
+    margin-right: 18%;
   }
   /* <================OFFERS================> */
 

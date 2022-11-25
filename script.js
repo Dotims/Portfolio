@@ -60,23 +60,19 @@ for(let i=0;i<links.length;i++){
 
 //phone navbar=====================================//
 
-let close_navbar = document.getElementsByClassName('cencel')
-let open_navbar = document.getElementsByClassName('navbar_open')
-let menu = document.getElementsByClassName('menu')
+let close_navbar = document.getElementsByClassName('cencel')[0]
+let open_navbar = document.getElementsByClassName('navbar_open')[0]
+let menu = document.getElementsByClassName('menu')[0]
 let menu_toggle = document.getElementsByClassName('menu-close')
 
-for (let i = 0; i < open_navbar.length; i++) {
-    open_navbar[i].addEventListener('click', function () {
-        menu[i].classList.toggle('active')
-    })
-}
 
-for (let i = 0; i < close_navbar.length; i++) {
-    close_navbar[i].addEventListener('click', function () {
-        menu[i].classList.remove('active')
-        
-    })
-}
+open_navbar.addEventListener('click', function () {
+    menu.classList.toggle('active')
+})
 
+
+close_navbar.addEventListener('click', function () {
+    menu.classList.remove('active')
+})
 
 
